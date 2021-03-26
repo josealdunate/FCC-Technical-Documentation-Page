@@ -1,0 +1,162 @@
+/*----------- OVERALL -----------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------- NAV-BAR -----------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100vh;
+    z-index: 5;
+    overflow: scroll;
+    background:rgb(15, 41, 61);
+    box-shadow: 0rem 0rem 0.8rem 0.1rem rgba(0, 0, 0, 0.4);
+    border-right: 2px solid white;
+    
+}
+
+nav header {
+    position: sticky;
+    padding: 1rem 0;
+    top: 0;
+    background-color: rgb(15, 41, 61);
+}
+
+h1 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+
+.h1-sub {
+    display: block;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+    color: rgb(245, 244, 240);
+    transition: .3s ease;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(34, 68, 94);
+}
+nav li:last-child a {
+    border-bottom: none;
+}
+
+nav a:hover {
+    background:rgb(11, 61, 99);
+}
+
+
+/*----------- MAIN CONTENT -----------*/
+main {
+    position: absolute;
+    top: 0;
+    left: 20rem;
+    padding: 0rem 4vw;
+    background:rgb(245, 244, 240);
+}
+
+section {
+    padding: 2rem 0 3rem 0;
+    border-bottom: 1px solid rgb(118, 145, 165);
+}
+
+section:last-child {
+    border-bottom: none
+}
+
+.section-content {
+    padding: 0 2.5vw;
+}
+
+h2 {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.75rem;
+    color:rgb(32, 58, 78);
+}
+
+h3 {
+    font-family: 'Antic Slab', serif;
+    color:rgb(42, 68, 88);
+}
+
+p, 
+main li {
+    font-family: 'Roboto', sans-serif;
+    color:rgb(22, 44, 61);
+}
+
+p {
+    text-align: justify;
+    text-indent: 2rem;
+    font-size: 1rem;
+}
+
+main ul {
+    list-style: circle;
+}
+
+/*----------- CODE CONTENT -----------*/
+
+code {
+    display: block;
+    white-space:pre-wrap;
+    background: rgb(235, 238, 241);
+    padding: 1rem 2rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0.3rem;
+    line-height: 1.3rem;
+    color: rgb(100, 100, 100);
+    font-size: 1.05rem;
+}
+
+.mustard {
+    color: rgb(214, 166, 10);
+}
+
+.green {
+    color: rgb(65, 151, 65);
+}
+
+.purple {
+    color: rgb(156, 12, 175);
+}
+
+.blue {
+    color: rgb(20, 106, 177);
+}
+
+.red {
+    color:rgb(189, 47, 47);
+}
