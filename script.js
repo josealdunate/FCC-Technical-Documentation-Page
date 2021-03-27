@@ -18,5 +18,15 @@ function hideNav() {
     }
 }
 
+window.addEventListener("resize", function() {
+    if (document.documentElement.clientWidth > 550) {
+        nav.style.position = "fixed";
+        navLinks.style.display = "block";
+    } else {
+        navLinks.style.display = "none";
+        nav.style.position = "sticky";
+    }
+})
+
 
 
