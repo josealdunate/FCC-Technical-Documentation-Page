@@ -8,35 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Fjalla+One&family=Lilita+One&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>FCC: Technical Documentation Page</title>
 </head>
 <body>
     <nav id="navbar">
-        <header>
-            <h1>Popular Programming Languages</h1>
-        </header>
-            <ul>
-                <li><a href="#JavaScript" class="nav-link">JavaScript</a></li>
-                <li><a href="#Python" class="nav-link">Python</a></li>
-                <li><a href="#Java" class="nav-link">Java</a></li>
-                <li><a href="#PHP" class="nav-link">PHP</a></li>
-                <li><a href="#Kotlin" class="nav-link">Kotlin</a></li>
-                <li><a href="#HTML" class="nav-link">HTML</a></li>
-                <li><a href="#C++" class="nav-link">C++</a></li>
-                <li><a href="#Rust" class="nav-link">Rust</a></li>
-                <li><a href="#TypeScript" class="nav-link">TypeScript</a></li>
-                <li><a href="#CSS" class="nav-link">CSS</a></li>
-                <li><a href="#Swift" class="nav-link">Swift</a></li>
-                <li><a href="#C#" class="nav-link">C#</a></li>
-                <li><a href="#Perl" class="nav-link">Perl</a></li>
-                <li><a href="#Scala" class="nav-link">Scala</a></li>
-                <li><a href="#Scheme" class="nav-link">Scheme</a></li>
-                <li><a href="#SQL" class="nav-link">SQL</a></li>
-                <li><a href="#R_Programming" class="nav-link">R Programming</a></li>
-                <li><a href="#Golang_(Go)" class="nav-link">Golang (Go)</a></li>
-                <li><a href="#Ruby" class="nav-link">Ruby</a></li>
-                <li><a href="#Elixir" class="nav-link">Elixir</a></li>
-            </ul>
+        <div class="heading">
+            <header>
+                <h1>Popular Programming Languages</h1>
+            </header>
+            <div class="icon-div">
+                <a href="javascript:void(0);" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <ul id="navLinks">
+            <li><a href="#JavaScript" class="nav-link" onclick="hideNav()">JavaScript</a></li>
+            <li><a href="#Python" class="nav-link" onclick="hideNav()">Python</a></li>
+            <li><a href="#Java" class="nav-link" onclick="hideNav()">Java</a></li>
+            <li><a href="#PHP" class="nav-link" onclick="hideNav()">PHP</a></li>
+            <li><a href="#Kotlin" class="nav-link" onclick="hideNav()">Kotlin</a></li>
+            <li><a href="#HTML" class="nav-link" onclick="hideNav()">HTML</a></li>
+            <li><a href="#C++" class="nav-link" onclick="hideNav()">C++</a></li>
+            <li><a href="#Rust" class="nav-link" onclick="hideNav()">Rust</a></li>
+            <li><a href="#TypeScript" class="nav-link" onclick="hideNav()">TypeScript</a></li>
+            <li><a href="#CSS" class="nav-link" onclick="hideNav()">CSS</a></li>
+            <li><a href="#Swift" class="nav-link" onclick="hideNav()">Swift</a></li>
+            <li><a href="#C#" class="nav-link" onclick="hideNav()">C#</a></li>
+            <li><a href="#Perl" class="nav-link" onclick="hideNav()">Perl</a></li>
+            <li><a href="#Scala" class="nav-link" onclick="hideNav()">Scala</a></li>
+            <li><a href="#Scheme" class="nav-link" onclick="hideNav()">Scheme</a></li>
+            <li><a href="#SQL" class="nav-link" onclick="hideNav()">SQL</a></li>
+            <li><a href="#R_Programming" class="nav-link" onclick="hideNav()">R Programming</a></li>
+            <li><a href="#Golang_(Go)" class="nav-link" onclick="hideNav()">Golang (Go)</a></li>
+            <li><a href="#Ruby" class="nav-link" onclick="hideNav()">Ruby</a></li>
+            <li><a href="#Elixir" class="nav-link" onclick="hideNav()">Elixir</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
         <section id="JavaScript" class="main-section">
@@ -679,6 +687,6 @@
         </div>
         <p class="developer"><small>Developed by <a href="https://github.com/josealdunate">José Ignacio Aldunate</a></small></p>
     </footer>
-    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+    <script src="script.js"></script>
 </body>
 </html>
