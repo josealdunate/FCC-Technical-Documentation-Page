@@ -8,8 +8,12 @@
 
 body,
 nav ul {
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -19,14 +23,13 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20rem;
+    width: 18rem;
     height: 100vh;
     z-index: 5;
     overflow: scroll;
     background:rgb(15, 41, 61);
     box-shadow: 0rem 0rem 0.8rem 0.1rem rgba(0, 0, 0, 0.4);
     border-right: 2px solid white;
-    
 }
 
 nav header {
@@ -41,7 +44,6 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
     font-size: 1.6rem;
-    
 }
 
 .h1-sub {
@@ -59,30 +61,38 @@ nav li {
 }
 
 nav a {
-    color: rgb(245, 244, 240);
-    transition: .3s ease;
-}
-
-nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
+    color: rgb(245, 244, 240);
     border-bottom: 1px solid rgb(34, 68, 94);
+    transition: .3s ease;
 }
 nav li:last-child a {
     border-bottom: none;
 }
 
 nav a:hover {
-    background:rgb(11, 61, 99);
+    background:rgb(20, 80, 126);
+}
+
+@media (max-width: 870px) {
+    nav {
+        width: 12rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 
 /*----------- MAIN CONTENT -----------*/
 main {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 20rem;
+    width: calc(100vw - 18rem);
+    left: 18rem;
     padding: 0rem 4vw;
     background:rgb(245, 244, 240);
 }
@@ -115,6 +125,7 @@ p,
 main li {
     font-family: 'Roboto', sans-serif;
     color:rgb(22, 44, 61);
+    font-weight: 300;
 }
 
 p {
@@ -125,6 +136,13 @@ p {
 
 main ul {
     list-style: circle;
+}
+
+@media (max-width: 870px) {
+    main {
+        width: calc(100vw - 12rem);
+        left: 12rem;
+    }
 }
 
 /*----------- CODE CONTENT -----------*/
@@ -139,6 +157,7 @@ code {
     line-height: 1.3rem;
     color: rgb(100, 100, 100);
     font-size: 1.05rem;
+    overflow: scroll;
 }
 
 .mustard {
@@ -159,4 +178,64 @@ code {
 
 .red {
     color:rgb(189, 47, 47);
+}
+
+/*----------- FOOTER -----------*/
+
+footer {
+    position: relative;
+    width: calc(100vw - 18rem);
+    left: 18rem;
+    padding: 3rem 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgb(229, 225, 209);
+    border-top: 1px solid rgb(177, 165, 119);
+}
+
+footer p {
+    margin: 0.1rem;
+    color: rgb(104, 75, 12);
+    font-weight: 400;
+    text-indent: 0;
+    text-align: center;
+}
+
+footer a {
+    color: rgb(146, 116, 50);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: rgb(53, 99, 134);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.prev-next-projects {
+    display: flex;
+}
+
+.prev-project,
+.next-project {
+    padding: 0.2rem 1rem;
+    margin: 0.3rem 0rem;
+}
+
+.prev-project {
+    border-right: 1px solid #cacaca;
+}
+
+.developer {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 870px) {
+    footer {
+        width: calc(100vw - 12rem);
+        left: 12rem;
+    }
 }
